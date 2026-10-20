@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/naminter@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/naminter@sha256:a8b23eaa5be2f17035d926f71dde7354853ad3b86f5061272f12c9f7fb80049d
   platforms: [linux/amd64, linux/arm64]
   command: ["naminter", "--username", "{username}", "--include-categories", "{category}"]
   output_format: text
